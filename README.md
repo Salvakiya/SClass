@@ -4,7 +4,7 @@ Small Class Implementation
 This readme is incomplete
 
 # Features
-class() returns the class twice so you can easily make a local alias for it ```local a,b = class()```
+class() returns the class twice so you can easily make a local alias for it. Given the case of ```local foo, bar = class()``` foo is the same as bar
 
 # Usage
 
