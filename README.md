@@ -4,6 +4,8 @@ Small Class Implementation
 This readme is incomplete
 
 # Features
+class() returns the class twice so you can easily make a local alias for it ```lua a,b = class()```
+
 # Usage
 
 ```lua
