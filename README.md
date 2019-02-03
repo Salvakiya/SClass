@@ -12,11 +12,16 @@ class() returns the class twice so you can easily make a local alias for it. Giv
 local class = require('sclass')
 
 local foo = class()
+
 function foo:init()
   print('hello!')
 end
 
+local bar = class(foo)
+
+local baz = bar() -- hello!
 ```
+the function returned from sclass will return the same value twice... this allows you to do the following:
 ```lua
 local class = require('sclass')
 
@@ -36,4 +41,5 @@ local Dog, self = class(Animal) do
 end
 
 local mydog = Dog()
+mydog:bark() -- woof
 ```
